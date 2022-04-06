@@ -1,0 +1,94 @@
+
+% use this code for matlab program if you have acces to that program as an 
+% individual or student
+% (pssss pssss or download it from pirate bay)  :)
+% just upload your picture in this case picture "A"
+% and convert it to binary code for arduino
+% change pixels in paint for something other
+
+% put the name of your uploaded picture here
+
+Irgb = imread('A.png');  
+threshold = 128;
+Igray = rgb2gray(Irgb);
+Ibw = Igray>threshold;
+Ibw = ~(Ibw);
+imshow(Ibw);
+
+
+A = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,216),Ibw(770,216),Ibw(720,216),Ibw(670,216),Ibw(620,216),Ibw(570,216),Ibw(520,216),Ibw(470,216));
+B = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,216),Ibw(370,216),Ibw(320,216),Ibw(270,216),Ibw(220,216),Ibw(170,216),Ibw(120,216),Ibw(69,216));
+
+C = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,266),Ibw(770,266),Ibw(720,266),Ibw(670,266),Ibw(620,266),Ibw(570,266),Ibw(520,266),Ibw(470,266));
+D = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,266),Ibw(370,266),Ibw(320,266),Ibw(270,266),Ibw(220,266),Ibw(170,266),Ibw(120,266),Ibw(69,266));
+
+E = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,316),Ibw(770,316),Ibw(720,316),Ibw(670,316),Ibw(620,316),Ibw(570,316),Ibw(520,316),Ibw(470,316));
+F = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,316),Ibw(370,316),Ibw(320,316),Ibw(270,316),Ibw(220,316),Ibw(170,316),Ibw(120,316),Ibw(69,316));
+
+G = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,366),Ibw(770,366),Ibw(720,366),Ibw(670,366),Ibw(620,366),Ibw(570,366),Ibw(520,366),Ibw(470,366));
+H = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,366),Ibw(370,366),Ibw(320,366),Ibw(270,366),Ibw(220,366),Ibw(170,366),Ibw(120,366),Ibw(69,366));
+
+I = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,416),Ibw(770,416),Ibw(720,416),Ibw(670,416),Ibw(620,416),Ibw(570,416),Ibw(520,416),Ibw(470,416));
+J = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,416),Ibw(370,416),Ibw(320,416),Ibw(270,416),Ibw(220,416),Ibw(170,416),Ibw(120,416),Ibw(69,416));
+
+K = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,466),Ibw(770,466),Ibw(720,466),Ibw(670,466),Ibw(620,466),Ibw(570,466),Ibw(520,466),Ibw(470,466));
+L = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,466),Ibw(370,466),Ibw(320,466),Ibw(270,466),Ibw(220,466),Ibw(170,466),Ibw(120,466),Ibw(69,466));
+
+M = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,516),Ibw(770,516),Ibw(720,516),Ibw(670,516),Ibw(620,516),Ibw(570,516),Ibw(520,516),Ibw(470,516));
+N = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(420,516),Ibw(370,516),Ibw(320,516),Ibw(270,516),Ibw(220,516),Ibw(170,516),Ibw(120,516),Ibw(69,516));
+
+O = sprintf('B%d%d%d%d%d%d%d%d,%d',Ibw(820,566),Ibw(770,566),Ibw(720,566),Ibw(670,566),Ibw(620,566),Ibw(570,566),Ibw(520,566),Ibw(470,566));
+P = sprintf('B%d%d%d%d%d%d%d%d%d',Ibw(420,566),Ibw(370,566),Ibw(320,566),Ibw(270,566),Ibw(220,566),Ibw(170,566),Ibw(120,566),Ibw(69,566));
+
+
+disp(A)
+disp(B)
+disp(C)
+disp(D)
+disp(E)
+disp(F)
+disp(G)
+disp(H)
+disp(I)
+disp(J)
+disp(K)
+disp(L)
+disp(M)
+disp(N)
+disp(O)
+disp(P)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
