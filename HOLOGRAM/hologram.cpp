@@ -310,17 +310,17 @@ void hologram::print_matrix(bool *slide){  // funkcija za printanje matrice
 
 void hologram::delete_m(){  // funkcija za brisanje cijele matrice
 
+if(br_intrpt == 1)   // popravljanje interupt brojača da ne minja u krivo
+br_intrpt = 2;
+if(br_intrpt == 3)
+br_intrpt = 0;
+
 //    if(br_intrpt == 0 || br_intrpt == 2){
       memset(matrix, 0, sizeof(matrix));
       br_bajt = 0;
       shift = 0;
       
 //   }	// od if 
-
-if(br_intrpt == 1)   // popravljanje interupt brojača da ne minja u krivo
-br_intrpt = 2;
-if(br_intrpt == 3)
-br_intrpt = 0;
 
 }
 
@@ -333,16 +333,18 @@ void hologram::inverse_pixel(){
 
 //  if(br_intrpt == 0 || br_intrpt == 2){
   
+if(br_intrpt == 1)    // popravljanje interupt brojača da ne minja u krivo
+br_intrpt = 2;
+if(br_intrpt == 3)
+br_intrpt = 0;
+
    for(int i = 0; i < 16*strPos ; i++){  
    
       matrix[i] = ((byte)~matrix[i]);
   
     }
 //  } // od if
-if(br_intrpt == 1)    // popravljanje interupt brojača da ne minja u krivo
-br_intrpt = 2;
-if(br_intrpt == 3)
-br_intrpt = 0;
+
 }
 
 
@@ -369,22 +371,28 @@ void hologram::block_load(byte *gif, int *pos){   // funkcija za printanje gifa
      }
 }
 
-void hologram::print_timed_matrtx(unsigned int *gif_lenght, bool *slidee){
+void hologram::print_m(unsigned int *gif_duration, bool *slidee){
+	
+	
+	if(gif_duration == 0)
+		print_matrix(slidee);
 
+	else{
         sadd = millis();
         predd = sadd;
-      while(sadd - predd < gif_lenght){
+      while(sadd - predd < gif_duration){  // prikazuj matricu određeno vrijeme
           sadd = millis();
         print_matrix(slidee);
      }
+	}
 
 }
 
 void hologram::number_load(double number, int num_width, int dec_num){
 
-    dtostrf(number, num_width, dec_num, str_i );
-  sprintf(data, "%s", str_i);
-   text_load(data);
+    dtostrf(number, num_width, dec_num, str_i );  //
+  sprintf(data, "%s", str_i);					  //
+   text_load(data);								  //
   
 }
 
@@ -397,11 +405,15 @@ void hologram::text_load(char *str){   // funkcija za printanje teksta
 
 //  if(br_intrpt == 0 || br_intrpt == 2){
    
+if(br_intrpt == 1)    // popravljanje interupt brojača da ne minja u krivo
+br_intrpt = 2;
+if(br_intrpt == 3)
+br_intrpt = 0;
     strPos = 0;   // resetiraj brojač slova kako bi mogli unijeti novi tekst ako postoji 
   
   while(str[strPos] != 0){  // provjeri svako slovo pa ga dekodiraj, zatim ubaci u matricu
  
-      text_ch[strPos] = str[strPos];
+      text_ch[strPos] = str[strPos];  // spremi slovo za usporedbu
       
     switch (str[strPos]) {
                  
@@ -682,10 +694,6 @@ void hologram::text_load(char *str){   // funkcija za printanje teksta
  
 // } // od if
 
-if(br_intrpt == 1)    // popravljanje interupt brojača da ne minja u krivo
-br_intrpt = 2;
-if(br_intrpt == 3)
-br_intrpt = 0;
 }// funkcija
 
 
