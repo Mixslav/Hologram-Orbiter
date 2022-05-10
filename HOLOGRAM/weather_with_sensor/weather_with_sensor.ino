@@ -65,13 +65,13 @@ void loop() {
      lcd.block_load( p_1,0 );      // load picture from cloud_anumation.h on place 0
      lcd.block_load( p_2,1 );      // load picture from cloud_anumation.h on place 1
      
-  lcd.print_timed_matrtx(200,0);  // project all 200 ms without slide
+  lcd.print_m(200,0);  // project all 200 ms without slide
 
 // now change cloud animation pictures 
      lcd.block_load( p_3,0 );     // load picture from cloud_anumation.h on place 0
      lcd.block_load( p_4,1 );     // load picture from cloud_anumation.h on place 1
  
-  lcd.print_timed_matrtx(200,0);  // project all 200 ms without slide
+  lcd.print_m(200,0);  // project all 200 ms without slide
 
 
 
