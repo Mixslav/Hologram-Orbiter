@@ -1,8 +1,5 @@
 #include <hologram.h>   // library for holografic device
 #include "icon.h"         // data base for letters and numbers
-#include "scy_fi_block.h" // data base for animation
-#include "equalizer.h"    // data base for animation
-#include "my_gif.h"       // data base for animation
 #include "guy_gif.h"       // data base for animation
 
 // these pins are for data transfer
@@ -64,48 +61,48 @@ gif();  // your sword man gif
 //gif function    
 void gif (){
   lcd.block_load( picture_1,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
   
   lcd.block_load( picture_2,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_3,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_4,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_5,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_6,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_7,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_8,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_9,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_10,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_11,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_12,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_13,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_14,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
 
   lcd.block_load( picture_15,4 );      // load picture from guy_gif.h file on place 4
-  lcd.print_timed_matrtx(200,0);      // project all blocks 200 ms without slide
+  lcd.print_m(200,0);      // project all blocks 200 ms without slide
   
 }
